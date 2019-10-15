@@ -18,18 +18,10 @@ that is performed feature-wise (columns); if the data point that was selected as
 In a log transformation, a log is taken for every value in a data set. The base to the log doesn't matter as long as all the values are transformed with the same base. Most of the programming languages have a core function to calculate the log of a number. In programming languages that support vector operation, for example, R, the same log function can be performed on a   single scalar value or on all the values within a data frame or a matrix.
 
 Traditionally, one of the primary purposes of doing a log transformation is to reduce the skewness of highly skewed data. Log transformation makes a plot to be more interpretable, and also satisfies underling assumptions of statistical tests. 
- 
-In an example below, let's create a skewed dummy dataset, test for its skewness, and perform a log transformation and visualize the effect of the transformation. I will use Python 3 here as a language of choice.
 
-```
-# R
-log(x, base = exp(1))
+Let's visualize the effect of log transformation on a synthetically generated dummy data. For the figure below, I have randomly sampled 10,000 positive real numbers from a skewed normal distribution and performed a log transformation on every data point.  The left sub-panel shows a histogram of the non-transformed data, and the right sub-panel shows a histogram of the log-transformed data. The plot very clearly depicts the effect of log-transformation on the skewness of the data. In addition to the visual inspection, we can also numerically quantify the skewness for both sets of data. For the generation of the synthetic data, I set the skewness to be 10, which for random sampling turned out to be 0.9, and for the log-transformed data, the skewness is calculated to be 0.2. The Python 3 code that generated this figure is available at [https://github.com/rohitfarmer/data-science-notes/notebooks/data-transformation.         ipynb](https://github.com/rohitfarmer/data-science-notes/notebooks/data-transformation.ipynb). 
 
-# Python
-import math
-
-math.log(x [,base])
-```
+![Log Transformation Figure](../images/data-transformation/log-transformation.png)
 
 
 
