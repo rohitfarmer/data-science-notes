@@ -14,6 +14,7 @@ This project is a solo venture for me. However, I am open to collaboration with 
   * `sudo apt-get install pandoc`
   * `sudo apt install ttf-dejavu-extra`
   * `sudo python3 -m pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos`
+  * `sudo apt-get install pandoc-citeproc`
 
 **Run**
 * A generic command to compile a pdf with a table of content and title/meta information read from a yaml file. 

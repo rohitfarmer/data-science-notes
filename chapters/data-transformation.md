@@ -27,3 +27,4 @@ Let's visualize the effect of log transformation on a synthetically generated du
 ![Histogram of the non and log transformed data. The skewness for the non-transformed data (left) is 0.9 and for the log-transformed data (right) is 0.2.](../images/data-transformation/log-transformation.png){#fig:log-hist}
 
 
+Let's test a citation [@Farmer2019]
