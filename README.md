@@ -3,3 +3,20 @@ I am doing data science for the past two years, and these are the notes on some 
 
 This project is a solo venture for me. However, I am open to collaboration with other writers. For feedback and collaboration, please write to me at [rohit.farmer@gmail.com](mailto:rohit.farmer@gmail.com)
 
+# Tools Used to Compile this Book
+
+## Pandoc
+
+**Install**
+* Essentials for PDF generation via LaTex.
+  * `sudo apt-get install texlive`
+  * `sudo apt-get install texlive-latex-extra`
+  * `sudo apt-get install pandoc`
+  * `sudo apt install ttf-dejavu-extra`
+  * `sudo python3 -m pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos`
+
+**Run**
+* A generic command to compile a pdf with a table of content and title/meta information read from a yaml file. 
+  * `cd chapters`
+  * `pandoc --toc -o ../book.pdf title.yaml data-transformation.md`
+
