@@ -22,6 +22,7 @@ Traditionally, one of the primary purposes of doing a log transformation is to r
 Let's visualize the effect of log transformation on a synthetically generated dummy data. For the figure below, I have randomly sampled 10,000 positive real numbers from a skewed normal distribution and performed a log transformation on every data point.  The left sub-panel shows a histogram of the non-transformed data, and the right sub-panel shows a histogram of the log-transformed data. The plot very clearly depicts the effect of log-transformation on the skewness of the data. In addition to the visual inspection, we can also numerically quantify the skewness for both sets of data. For the generation of the synthetic data, I set the skewness to be 10, which upon random sampling turned out to be 0.9 for the non-transformed data, and for the log-transformed data, the skewness is calculated to be 0.2. The Python 3 code that generated this figure is available [here](https://github.com/rohitfarmer/data-science-notes/blob/master/notebooks/data-transformation.ipynb). 
 
 ![Log Transformation Figure](log-transformation.png)
+
 *Figure 1. Histogram of the non and log transformed data. The skewness for the non-transformed data (left) is 0.9 and for the log-transformed data (right) is 0.2.*
 
 
