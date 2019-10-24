@@ -5,7 +5,6 @@ pandoc  --toc \
         --filter pandoc-xnos \
         --bibliography=data.bib \
         --csl=american-statistical-association.csl \
-        --include-in-header chapter_break.tex \
         -V linkcolor:blue \
         -V geometry:a4paper \
         -V geometry:margin=2.54cm \
@@ -17,3 +16,5 @@ pandoc  --toc \
         data-transformation.md \
         references.md \
         -o ../data-science-my-notes.pdf
+
+    #    --include-in-header chapter_break.tex \

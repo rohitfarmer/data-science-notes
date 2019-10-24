@@ -3,7 +3,9 @@
 cd chapters
 pandoc  --toc \
         --filter pandoc-xnos \
-        --include-in-header chapter_break.tex \
+        --bibliography=data.bib \
+        --epub-chapter-level=1 \
+        --csl=american-statistical-association.csl \
         -V linkcolor:blue \
         -V geometry:a4paper \
         -V geometry:margin=2.54cm \
@@ -13,4 +15,5 @@ pandoc  --toc \
         -V links-as-notes=true \
         title.yaml \
         data-transformation.md \
+        references.md \
         -o ../data-science-my-notes.html

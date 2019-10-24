@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="epub-id-1">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="epub-id-1">urn:uuid:098bb066-2318-4a83-935a-2422433e4158</dc:identifier>
+    <dc:title id="epub-title-1">Data Science: My Notes</dc:title>
+    <dc:date id="epub-date-1">2019-10-16T20:22:56Z</dc:date>
+    <dc:language>en-US</dc:language>
+    <dc:creator id="epub-creator-1" opf:role="aut">Rohit Farmer</dc:creator>
+    <dc:rights>All Rights Reserved</dc:rights>
+  </metadata>
+  <manifest>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="style" href="stylesheet.css" media-type="text/css" />
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" />
+    <item id="title_page_xhtml" href="title_page.xhtml" media-type="application/xhtml+xml" />
+    <item id="ch001_xhtml" href="ch001.xhtml" media-type="application/xhtml+xml" />
+    <item id="ch002_xhtml" href="ch002.xhtml" media-type="application/xhtml+xml" />
+    <item id="file0_png" href="media/file0.png" media-type="image/png" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="title_page_xhtml" linear="yes" />
+    <itemref idref="nav" />
+    <itemref idref="ch001_xhtml" />
+    <itemref idref="ch002_xhtml" />
+  </spine>
+  <guide>
+    <reference type="toc" title="Data Science: My Notes" href="nav.xhtml" />
+  </guide>
+</package>
