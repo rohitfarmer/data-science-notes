@@ -60,7 +60,36 @@ Let's use similar positively skewed data as in the log transformation to visuali
 
 Data scaling is a type of data transformation that usually doesn't affect the distribution of the data but change the scale on which the numerical values are presented. For example, if a distribution is normally distributed then it will stay normally distributed after the transformation however, if the numbers range from say 10 to 100 they may be re-scaled from 0 to 1. The relative difference between the numbers will remain the same. Such type of transformation is useful when the features in the data set are measured on different scales. For example in a data set that records height, weight, and time taken to finish a 100 meter sprint for 20 high school boys height would probably range from 4 to 6 ft, weight from 40 to 80 kg and sprint time from 10 to 30 seconds. You can see although they are all positive real numbers but they have different units and also different scales on which they are measured. In this particular example none of the ranges even overlap. Such kind of data sometimes becomes very difficult for machine learning algorithms to work with in particular for gradient decent algorithms to converge in a reasonable number of iterations. Therefore, having all the features on the same scale becomes desirable if not essential. 
 
-## Min-Max Scaling
+There are two common ways to get all the features to have the same scale: min-max scaling and standardization.
+
+### Min-Max Scaling
+
+In min-max scaling for a given feature, we subtract the minimum value from each value and divide the residual by the difference between the maximum and the minimum value. The resulting transformed data is scaled between 0 and 1. 
+
+$$minmax(x) = x - min(x) / max(x) - min(x)$$
+
+Min-max scaling can also be modified to scale the values to the desired range, for example, between -1 and 1.
+
+$$minmax(x) = ((b - a) * (x - min(x)) / max(x) - min(x)) +  a$$
+
+Where $a$ and $b$ are the minimum and maximum range respectively.
+
+#### Application(s)
+* Neural networks
+
+### Standardization
+
+Standardization is also known as z-scaling, mean removal, or variance scaling. In standardization, the goal is to scale the data with a mean of zero and a standard deviation of one.
+
+$$z = (x - \mu)/\sigma$$
+
+Where $\mu$ is the mean and $\sigma$ is the standard deviation of a given feature. Then, the distribution of the transformed data is called the z-distribution.
+
+#### Application(s)
+* Principal Component Analysis (PCA)
+* In heatmaps to compare data among samples
+
+## Sample Wise Data Normalization
 
 
-iLet's test a citation [@Farmer2019]
+
