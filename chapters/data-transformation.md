@@ -89,7 +89,14 @@ Where $\mu$ is the mean and $\sigma$ is the standard deviation of a given featur
 * Principal Component Analysis (PCA)
 * In heatmaps to compare data among samples
 
-## Sample Wise Data Normalization
+## Data Normalization
+In data science, we casually use the term data normalization for any method that transforms the data across the samples or features so that the data's elements (samples or features) are similar and comparable. For example, in the case of gene expression measurements for multiple samples, we want to detect actual biological differences between the samples than the technical variations caused by human errors in handling samples. Therefore, having normalized data ensures that the differentially expressed genes we detect are due to biological conditions and not technical noise. 
 
+However, I like to consider normalization methods different from element-wise transformation or feature-wise scaling as changing the dataset requires re-normalization. As in the gene expression example, quantile normalization is frequently used and sensitive to changes in the samples and the features. Unlike element-wise transformation, where neither a sample nor a feature affects the transformation, or in feature-wise scaling, where dropping a feature would not affect the scaling of other features.
+
+Therefore, this section will look into methods that are unlike element-wise transformation or feature-wise scaling.
+
+### Quantile Normalization
+[Quantile normalization](https://en.wikipedia.org/wiki/Quantile_normalization) (QN) is a technique to make two distribution identical in statistical properties. QN involves first ranking the feature of each sample by magnitude, calculating the average value for genes occupying the same rank, and then substituting the values of all genes occupying that particular rank with this average value. The next step is to reorder the features of each sample in their original order [@Stuart2019]. 
 
 
