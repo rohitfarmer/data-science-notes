@@ -17,5 +17,5 @@ pandoc  --pdf-engine=pdflatex \
         metadata.yaml \
         chapters/data-transformation.md \
         chapters/references.md \
-        -o build/data-science-my-notes.pdf
+        -o book/data-science-my-notes.pdf
 
