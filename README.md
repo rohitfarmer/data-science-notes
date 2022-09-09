@@ -5,14 +5,14 @@ This project is a solo venture for me. However, I am open to collaboration with 
 
 # Tools Used to Compile this Book
 
-## Pandoc
+## Pandoc, Latex, and Plugins
 
 **Install**
 * Essentials for PDF generation via LaTex.
-  * `sudo apt-get install texlive`
-  * `sudo apt-get install texlive-latex-extra`
+  * `sudo apt-get install texlive texlive-full`
+  * `sudo apt-get install texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra`
   * `sudo apt-get install pandoc`
-  * `sudo apt install ttf-dejavu-extra`
+  * `sudo apt-get install ttf-dejavu-extra`
   * `sudo python3 -m pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos`
   * `sudo apt-get install pandoc-citeproc`
 
@@ -21,3 +21,5 @@ This project is a solo venture for me. However, I am open to collaboration with 
   * `cd chapters`
   * `pandoc --toc -o ../book.pdf title.yaml data-transformation.md`
 
+## Templates
+Eisvogel: [ttps://github.com/Wandmalfarbe/pandoc-latex-template](https://github.com/Wandmalfarbe/pandoc-latex-template)

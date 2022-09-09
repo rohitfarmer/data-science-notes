@@ -31,11 +31,11 @@ $$x' = log(x)$$
 $$x' = x^n$$
 
 
-![Histogram of the positively skewed data and its log transformation. The skewness for the non-transformed data (left) is 0.9 and for the log-transformed data (right) is 0.2.](../images/data-transformation/log-transformation-pos.png){#fig:log-hist-pos}
+![Histogram of the positively skewed data and its log transformation. The skewness for the non-transformed data (left) is 0.9 and for the log-transformed data (right) is 0.2.](images/data-transformation/log-transformation-pos.png){#fig:log-hist-pos}
 
-![Histogram of the negatively skewed data and its log transformation. The skewness for the non-transformed data (left) is -0.9 and for the log-transformed data (right) is -1.2.](../images/data-transformation/log-transformation-neg.png){#fig:log-hist-neg}
+![Histogram of the negatively skewed data and its log transformation. The skewness for the non-transformed data (left) is -0.9 and for the log-transformed data (right) is -1.2.](images/data-transformation/log-transformation-neg.png){#fig:log-hist-neg}
 
-![Histogram of the negatively skewed data and its power transformation. Data is raised to the power ot 6. The skewness for the non-transformed data (left) is -0.9 and for the power-transformed data (right) is -0.3.](../images/data-transformation/pow-transformation-neg.png){#fig:pow-hist-neg}
+![Histogram of the negatively skewed data and its power transformation. Data is raised to the power ot 6. The skewness for the non-transformed data (left) is -0.9 and for the power-transformed data (right) is -0.3.](images/data-transformation/pow-transformation-neg.png){#fig:pow-hist-neg}
 
 *Note: Since the data used in these figures are sampled from a skewed normal distribution the skewness calculated here are below 2. For a non-normally distributed skewed data it would be higher than 2. Log transformation is often used to bring a non-normal distribution closer to a normal distribution.*
 
@@ -52,9 +52,9 @@ $$arcsinh(x) = log(x + \sqrt{x^2 + 1})$$
 
 Let's use similar positively skewed data as in the log transformation to visualize how an arcsinh transformation affects the shape of the distribution. The only change that I would want to do in this data set is to add few negative values. As I mentioned earlier that our mathematical laws doesn't allow us to take log on negative numbers arcsinh transformation is capable of transforming small negative values closer to zero. Figures @fig:arc-hist-pos and @fig:arc-hist-neg show the histograms comparing the original and the arcsinh transformed data for positive and negatively skewed data respectively. From the figures it's evident that unlike log,  arcsinh transformation works on both positively and negatively skewed data equally well.  
 
-![Histogram of the positively skewed data and its arcsinh transformation. The skewness for the non-transformed data (left) is 0.9 and for the arcsinh-transformed data (right) is 0.3.](../images/data-transformation/arc-transformation-pos.png){#fig:arc-hist-pos}
+![Histogram of the positively skewed data and its arcsinh transformation. The skewness for the non-transformed data (left) is 0.9 and for the arcsinh-transformed data (right) is 0.3.](images/data-transformation/arc-transformation-pos.png){#fig:arc-hist-pos}
 
-![Histogram of the negatively skewed data and its arcsinh transformation. The skewness for the non-transformed data (left) is -0.9 and for the arcsinh-transformed data (right) is -0.3.](../images/data-transformation/arc-transformation-neg.png){#fig:arc-hist-neg}
+![Histogram of the negatively skewed data and its arcsinh transformation. The skewness for the non-transformed data (left) is -0.9 and for the arcsinh-transformed data (right) is -0.3.](images/data-transformation/arc-transformation-neg.png){#fig:arc-hist-neg}
 
 ## Feature Wise Data Scaling
 

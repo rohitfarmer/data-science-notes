@@ -1,0 +1,19 @@
+---
+title: "Data Science: My Notes"
+subtitle: With Examples in R and Python
+author: Rohit Farmer
+subject: "Data Science"
+keywords: [data science, statistics, R, Python, machine learning]
+rights: All Rights Reserved
+language: en-US
+book: true
+lof: true
+lof-own-page: true
+toc-own-page: true
+titlepage: true
+titlepage-background: backgrounds/background10.pdf
+titlepage-text-color: "333333"
+titlepage-rule-color: "00737C"
+papersize: a4paper
+prepend-titlepage: images/book-cover.pdf
+---
